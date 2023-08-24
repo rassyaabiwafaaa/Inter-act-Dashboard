@@ -1,6 +1,7 @@
 import React from "react";
 import { Logo } from "../../assets/images";
 import { HomeIcon } from "../../assets/icons";
+import { sideBarMenu } from "../../const";
 
 export default function SideBar() {
   return (
@@ -14,12 +15,14 @@ export default function SideBar() {
         {/* Sidebar Menu */}
         <div className="mt-[62px]">
           <ul className="flex flex-col gap-[8px]">
-            <li className="h-[48px] bg-18 w-[210px] rounded-[8px] flex items-center pl-[14px]">
-              <a href="#" className="text-49 font-medium flex items-center gap-[12px]">
-                <img src={HomeIcon} alt="Home icon" className="" />
-                Home
-              </a>
-            </li>
+            {sideBarMenu.map((item) => (
+              <li className="h-[48px] bg-18 w-[210px] rounded-[8px] flex items-center pl-[14px]">
+                <a href="#" className="text-49 font-medium flex items-center gap-[12px]">
+                  <img src={item.icons} alt="Home icon" className="" />
+                  {item.text}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
