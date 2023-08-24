@@ -6,6 +6,7 @@ export default {
       colors: {
         summaryActive: "rgba(11, 184, 133, 1)",
         footerText: "rgba(138, 146, 166, 1)",
+        orange: "rgba(255, 129, 74, 1)",
         100: "rgba(23, 30, 55, 1)",
         18: "rgba(31, 40, 73, 1)",
         49: "rgba(108, 116, 125, 1)",
