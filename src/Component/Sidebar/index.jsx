@@ -22,7 +22,7 @@ export default function SideBar() {
             {sideBarMenu.map((item) => (
               <li key={item.text} id={item.text} className={`h-[48px] ${active === item.text && "bg-18"} w-[210px] rounded-[8px] flex items-center pl-[14px] cursor-pointer`} onClick={handleClickSideBarMenu}>
                 <div href="#" className="text-49 font-medium flex items-center gap-[12px]">
-                  <img src={item.icons} alt="Home icon" className="" />
+                  <img src={item.icons} alt="Home icon"/>
                   {item.text}
                 </div>
               </li>
