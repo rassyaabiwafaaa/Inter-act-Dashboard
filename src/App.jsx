@@ -1,4 +1,4 @@
-import { Footer, SummaryCard } from "./Component";
+import { ActivityOverview, EarningsCard, Footer, OrdersCard, ProfitCard, SummaryCard, TotalProfit } from "./Component";
 import Header from "./Component/Header";
 import SideBar from "./Component/Sidebar";
 import TitlePage from "./Component/TitlePage";
@@ -28,15 +28,23 @@ function App() {
             {/* charts */}
             <div className="mt-[25px] flex justify-between">
               {/* Left Content */}
-              <div className="w-[663px] h-full bg-gray-600">
+              <div className="w-[700px] h-full ">
                 {/* Top left Chart */}
-                <div className="h-[324px] w-full bg-orange-300">top left chart</div>
+                <div className="h-[220px] w-full flex justify-between">
+                  <EarningsCard />
+                  <OrdersCard />
+                  <ProfitCard />
+                </div>
                 {/* Bottom Right Chart */}
-                <div className="h-[362px] w-full bg-orange-400 mt-[18px]">bottom left chart</div>
+                <div className="h-[362px] w-full mt-[18px]">
+                  <TotalProfit />
+                </div>
               </div>
 
               {/* Right Content */}
-              <div className="w-[436px] h-[602] bg-gray-600"></div>
+              <div className="w-[436px] h-[602]">
+                <ActivityOverview />
+              </div>
             </div>
           </div>
 
