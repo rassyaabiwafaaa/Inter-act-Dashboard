@@ -7,11 +7,11 @@ function App() {
   return (
     <div className="flex">
       <SideBar />
-      <div className="bg-red-500 w-full">
+      <div className="bg-26 w-full ml-[250px]">
         {/* Header */}
         <Header />
         {/* Dashboard Content */}
-        <div className="mt-[45px] ml-[250px] pl-[32px] pr-[32px] pb-3">
+        <div className="mt-[45px]  pl-[32px] pr-[32px] pb-3">
           {/* Title page */}
           <TitlePage />
 
