@@ -56,3 +56,12 @@ export const summaryItem = [
     value: "$1250",
   },
 ];
+
+export const footerItems = [
+  {
+    text: "Privacy Policy",
+  },
+  {
+    text: "Terms of Use",
+  },
+];

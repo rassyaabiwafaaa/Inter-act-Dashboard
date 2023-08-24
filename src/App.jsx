@@ -1,4 +1,4 @@
-import { SummaryCard } from "./Component";
+import { Footer, SummaryCard } from "./Component";
 import Header from "./Component/Header";
 import SideBar from "./Component/Sidebar";
 import TitlePage from "./Component/TitlePage";
@@ -41,7 +41,9 @@ function App() {
           </div>
 
           {/* Footer */}
-          <div className="bg-white h-[20px] mt-[36px]"></div>
+          <div className="h-[20px] mt-[36px]">
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
