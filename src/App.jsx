@@ -2,6 +2,7 @@ import { SummaryCard } from "./Component";
 import Header from "./Component/Header";
 import SideBar from "./Component/Sidebar";
 import TitlePage from "./Component/TitlePage";
+import { summaryItem } from "./const";
 
 function App() {
   return (
@@ -16,14 +17,12 @@ function App() {
           <TitlePage />
 
           {/* Content */}
-          <div className="w-full h-full mt-[32px] bg-green-700">
+          <div className="w-full h-full mt-[32px]">
             {/* Summary */}
-            <div className="h-[100px] bg-gray-200 flex flex-row justify-between  gap-[25px]">
-              <SummaryCard />
-              <SummaryCard />
-              <SummaryCard />
-              <SummaryCard />
-              <SummaryCard />
+            <div className="h-[100px] flex flex-row justify-between  gap-[25px]">
+              {summaryItem.map((item) => (
+                <SummaryCard icons={item.icons} text={item.text} value={item.value} />
+              ))}
             </div>
 
             {/* charts */}
