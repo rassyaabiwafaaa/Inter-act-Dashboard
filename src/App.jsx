@@ -19,14 +19,14 @@ function App() {
           {/* Content */}
           <div className="w-full h-full mt-[32px]">
             {/* Summary */}
-            <div className="h-[100px] flex flex-row justify-between  gap-[25px]">
+            <div className="h-[100px] flex gap-6">
               {summaryItem.map((item) => (item.text === "Total Cost" ? <SummaryCard icons={item.icons} text={item.text} value={item.value} active={true} /> : <SummaryCard icons={item.icons} text={item.text} value={item.value} />))}
             </div>
 
             {/* charts */}
-            <div className="mt-[25px] flex justify-between">
+            <div className="mt-[25px] flex gap-6">
               {/* Left Content */}
-              <div className="w-[700px] h-full ">
+              <div className="w-[663px] h-full ">
                 {/* Top left Chart */}
                 <div className="h-[220px] w-full flex justify-between">
                   <EarningsCard />

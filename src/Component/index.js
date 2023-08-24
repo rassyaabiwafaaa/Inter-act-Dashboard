@@ -8,4 +8,5 @@ export { default as ProfitCard } from "./ProfitCard";
 export { default as TotalProfit } from "./TotalProfit";
 export { default as ActivityOverview } from "./ActivityOverview";
 export { default as Circle } from "./Circle";
+export { default as BarC } from "./BarChart";
 export { default as Footer } from "./Footer";

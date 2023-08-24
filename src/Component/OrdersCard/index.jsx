@@ -1,4 +1,28 @@
 import React from "react";
+import BarC from "../BarChart";
+
+const data = [
+  {
+    name: "Order A",
+    orders: 80,
+  },
+  {
+    name: "Order B",
+    orders: 189,
+  },
+  {
+    name: "Order C",
+    orders: 100,
+  },
+  {
+    name: "Order D",
+    orders: 60,
+  },
+  {
+    name: "Order E",
+    orders: 140,
+  },
+];
 
 export default function OrdersCard() {
   return (
@@ -9,6 +33,7 @@ export default function OrdersCard() {
         <span className="font-[500] text-[28.46px] text-orange">189K</span>
       </div>
       {/* Chart */}
+      <BarC data={data} className="mx-auto" />
     </div>
   );
 }
