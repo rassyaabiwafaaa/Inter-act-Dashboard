@@ -5,4 +5,6 @@ export { default as Trophy } from "./trophy.png";
 export { default as Calendar } from "./calendar.png";
 export { default as Revenue } from "./revenue.png";
 export { default as IconLogo } from "./icon-logo.png";
+export { default as Path } from "./Path.png";
+export { default as arrowUp } from "./arrowUp.png";
 export { default as Wallet } from "./wallet.png";

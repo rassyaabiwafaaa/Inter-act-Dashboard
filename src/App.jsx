@@ -20,7 +20,9 @@ function App() {
           <div className="w-full h-full mt-[32px]">
             {/* Summary */}
             <div className="h-[100px] flex gap-6">
-              {summaryItem.map((item) => (item.text === "Total Cost" ? <SummaryCard icons={item.icons} text={item.text} value={item.value} active={true} /> : <SummaryCard icons={item.icons} text={item.text} value={item.value} />))}
+              {summaryItem.map((item, index) =>
+                item.text === "Total Cost" ? <SummaryCard key={index} icons={item.icons} text={item.text} value={item.value} items={"Total Cost"} /> : <SummaryCard key={index} icons={item.icons} text={item.text} value={item.value} />
+              )}
             </div>
 
             {/* charts */}

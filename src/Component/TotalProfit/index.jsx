@@ -1,7 +1,57 @@
 import React from "react";
 import Circle from "../Circle";
+import BarChartStacked from "../BarChartStacked";
 
 import { BiChevronDown } from "react-icons/bi";
+import { Path } from "../../assets/images";
+
+const data = [
+  {
+    month: "Jan",
+    earning: 120,
+    expense: -180,
+  },
+  {
+    month: "Feb",
+    earning: 220,
+    expense: -90,
+  },
+  {
+    month: "Mar",
+    earning: 330,
+    expense: -50,
+  },
+  {
+    month: "Apr",
+    earning: 300,
+    expense: -220,
+  },
+  {
+    month: "May",
+    earning: 125,
+    expense: -150,
+  },
+  {
+    month: "Jun",
+    earning: 50,
+    expense: -50,
+  },
+  {
+    month: "July",
+    earning: 220,
+    expense: -110,
+  },
+  {
+    month: "Aug",
+    earning: 270,
+    expense: -80,
+  },
+  {
+    month: "Sep",
+    earning: 90,
+    expense: -130,
+  },
+];
 
 export default function TotalProfit() {
   return (
@@ -19,6 +69,9 @@ export default function TotalProfit() {
             </div>
           </div>
         </div>
+
+        {/* Charts */}
+        <BarChartStacked data={data} className="text-[11px] font-semibold pt-3" />
       </div>
       {/* Right Side */}
       <div className="pt-[28px] pl-[18.44px] flex flex-col justify-between items-center">
@@ -36,7 +89,9 @@ export default function TotalProfit() {
         </div>
 
         {/* Chart */}
-        <div className="w-[145px] h-[44px] bg-22">Charts</div>
+        <div className="w-[145px] h-[44px]">
+          <img src={Path} alt="path chart" />
+        </div>
 
         {/* CTA Button */}
         <div className="w-[118.32px] h-[32.87px] rounded-[4px] bg-22 flex justify-center items-center mb-[25.2px]">

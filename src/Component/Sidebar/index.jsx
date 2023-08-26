@@ -9,7 +9,7 @@ export default function SideBar() {
     setActive(e.target.id);
   };
   return (
-    <div className="w-[250px] bg-100 h-[100vh] fixed">
+    <div className="w-[250px] bg-100 h-[100vh] fixed z-[999]">
       <div className="pt-[20px] pl-[20px]">
         {/* Logo */}
         <div className="w-[132px] h-[35px]">
@@ -20,9 +20,14 @@ export default function SideBar() {
         <div className="mt-[62px]">
           <ul className="flex flex-col gap-[8px]">
             {sideBarMenu.map((item) => (
-              <li key={item.text} id={item.text} className={`h-[48px] ${active === item.text && "bg-18"} w-[210px] rounded-[8px] flex items-center pl-[14px] cursor-pointer`} onClick={handleClickSideBarMenu}>
+              <li
+                key={item.text}
+                id={item.text}
+                className={`h-[48px] ${active === item.text && "bg-18"} hover:bg-18 ease-in-out duration-500 w-[210px] rounded-[8px] flex items-center pl-[14px] cursor-pointer`}
+                onClick={handleClickSideBarMenu}
+              >
                 <div href="#" className="text-49 font-medium flex items-center gap-[12px]">
-                  <img src={item.icons} alt="Home icon"/>
+                  <img src={item.icons} alt="Home icon" />
                   {item.text}
                 </div>
               </li>
