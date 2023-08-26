@@ -9,4 +9,6 @@ export { default as TotalProfit } from "./TotalProfit";
 export { default as ActivityOverview } from "./ActivityOverview";
 export { default as Circle } from "./Circle";
 export { default as BarC } from "./BarChart";
+export { default as DropDown } from "./DropDown";
+export { default as DropdownItem } from "./DropdownItem";
 export { default as Footer } from "./Footer";

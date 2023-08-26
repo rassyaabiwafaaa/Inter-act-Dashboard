@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { ActivityOverview, EarningsCard, Footer, OrdersCard, ProfitCard, SummaryCard, TotalProfit } from "./Component";
 import Header from "./Component/Header";
 import SideBar from "./Component/Sidebar";
@@ -5,6 +6,7 @@ import TitlePage from "./Component/TitlePage";
 import { summaryItem } from "./const";
 
 function App() {
+  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <div className="flex">
       <SideBar />
@@ -31,7 +33,7 @@ function App() {
               <div className="w-[663px] h-full ">
                 {/* Top left Chart */}
                 <div className="h-[220px] w-full flex justify-between">
-                  <EarningsCard />
+                  <EarningsCard showDropDown={showDropDown} handleShowDropDown={() => setShowDropDown(!showDropDown)} />
                   <OrdersCard />
                   <ProfitCard />
                 </div>
