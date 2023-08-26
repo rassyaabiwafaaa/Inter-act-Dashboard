@@ -29,4 +29,4 @@ This project is built using the following technologies:
 
 ## Deployment
 
-- Link: [Inter-act Website](rassyaabiwafa-inter-act-dashboard.vercel.app)
+- Link: [Inter-act Website](https://rassyaabiwafa-inter-act-dashboard.vercel.app/)
